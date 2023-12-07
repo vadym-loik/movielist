@@ -1,0 +1,14 @@
+@use '../../assets/scss/functions' as *;
+@use '../../assets/scss/variables' as *;
+
+.footer {
+  width: 100%;
+  padding: toRem(15);
+  text-align: center;
+  margin-top: 20px;
+
+  &-link {
+    text-decoration: none;
+    color: getColor(primary-50);
+  }
+}

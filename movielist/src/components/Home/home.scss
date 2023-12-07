@@ -1,0 +1,12 @@
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  row-gap: 16px;
+  column-gap: 16px;
+  -webkit-box-align: start;
+  align-items: start;
+}
+
+.main-heading {
+  text-align: center;
+}

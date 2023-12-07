@@ -1,0 +1,67 @@
+@use '../../assets/scss/functions' as *;
+@use '../../assets/scss/variables' as *;
+
+.card-wrapper {
+  position: relative;
+  border-radius: toRem(12);
+  overflow: hidden;
+
+  .card-content {
+    padding: toRem(8);
+    background-color: getColor(black-30);
+    border-radius: toRem(12);
+    width: 100%;
+  }
+}
+
+.card-image {
+  display: inline-block;
+  width: 100%;
+  height: toRem(240);
+  border-radius: toRem(8);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: toRem(240);
+    object-fit: cover;
+    transition: transform 300ms animationBeizer();
+  }
+}
+
+.card-rating {
+  position: absolute;
+  z-index: 2;
+  top: toRem(16);
+  left: toRem(16);
+  background: getColor(black-75);
+  border-radius: toRem(8);
+  padding: toRem(4) toRem(8);
+  display: flex;
+  align-items: center;
+  .card-star {
+    height: toRem(16);
+    width: toRem(16);
+  }
+  .card-rating__text {
+    margin-left: toRem(4);
+    margin-bottom: 0;
+    color: getColor(warning-500);
+  }
+}
+
+.card-info {
+  .title {
+    color: getColor(grey-50);
+  }
+  .card-action {
+    margin-top: 16px;
+    &.success {
+      cursor: initial;
+      pointer-events: none;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+}
