@@ -1,6 +1,5 @@
 import './header.scss';
 import logo from '../../assets/img/logo.png';
-import Input from '../Input/Input';
 
 const Header = () => {
   return (
@@ -11,10 +10,9 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className="wrap container">
+      {/* <div className="wrap container">
         <h1>MovieList</h1>
-        <Input />
-      </div>
+      </div> */}
     </>
   );
 };

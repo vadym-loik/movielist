@@ -51,6 +51,11 @@
 }
 
 .card-info {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+
   .title {
     color: getColor(grey-50);
   }
